@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_smorest import Api
 
-from src.application.web.routes import blp as WebBluprint
+from src.application.web.router import blp as WebBluprint
 
 
 def create_app():

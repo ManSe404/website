@@ -9,37 +9,42 @@
 		<title>SSeman</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+
 		<div id="wrapper">
+
 			<div id="bg"></div>
 			<div id="overlay"></div>
 			<div id="main">
 
 				<!-- Header -->
 					<header id="header">
+
 						<h1>Stefan Seman</h1>
 						<p>Researcher &nbsp;&bull;&nbsp; Data Scientist &nbsp;&bull;&nbsp; Software Engineer</p>
+
 						<nav>
 							<ul>
+                                <li><a href="/home" class="icon solid fa-home"><span class="label">Email</span></a></li>
 								<li><a href="https://www.linkedin.com/in/sseman/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="https://www.researchgate.net/profile/Stefan-Seman" class="icon brands fa-researchgate"><span class="label">Researchgate</span></a></li>
 								<li><a href="https://github.com/ManSe404" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="mailto:stefan.seman404@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
 						</nav>
+
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
                         <span class="copyright">&copy; Stefan Seman. 2023: <a href="https://manse404.github.io/website/index.html"> Check my CV </a>.</span>
-                        <span class="chatbot"> Or if you have questions feel free to ask my <a href="http://localhost:5000/assistant">AI assistant </a></span>
 					</footer>
 
 			</div>
 		</div>
+
 		<script>
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
