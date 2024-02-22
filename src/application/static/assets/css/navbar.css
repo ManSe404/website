@@ -18,3 +18,29 @@
     }
 
 }
+
+
+
+	.card {
+    height: 100%; /* This will make all cards the same height */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1; /* This will make the card body take up the remaining space in the card */
+}
+
+.card-text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to display before truncating */
+    -webkit-box-orient: vertical;
+}
+
+.card-text {
+    height: 58%;
+    max-height: 58%;
+}
+
