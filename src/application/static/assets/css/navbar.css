@@ -44,3 +44,7 @@
     max-height: 58%;
 }
 
+.letter-spacing {
+    letter-spacing: 0.0125em; /* Adjust as needed */
+}
+
