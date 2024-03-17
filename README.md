@@ -16,7 +16,12 @@ This project is a personal card website that showcases the professional profile 
 
 ## How to Run
 
-1. Clone the repository to your local machine.
+Run
+1. pip install -r requirements.txt
+2. python bin/run.py
+3. website will be available on http://127.0.0.1:5000/
+
+
 2. Open the `index.html` file in your browser.
 
 ## Contributing
