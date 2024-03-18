@@ -1,0 +1,18 @@
+{% macro publication_card(image, title, link, journal) %}
+<div class="col">
+    <div class="card shadow-sm">
+        <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="{{ image }}" width="100%" height="100%" preserveAspectRatio="none"></image>
+        </svg>
+        <div class="card-body">
+            <p class="card-text card-text-truncate">{{ title }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn">
+                    <a href="{{ link }}" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
+                </div>
+                <small class="text-body-secondary">{{ journal }}</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

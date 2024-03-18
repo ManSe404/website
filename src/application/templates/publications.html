@@ -14,126 +14,30 @@ Stefan, Projects, AI Engineer, Researcher, PhD Candidate, University of Belgrade
 
 {% block content %}
 
-     
+    
+{% from "publication_card.html" import publication_card %}
 
-    <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
-            <h1 class="fw-light">Publications</h1>
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Publications</h1>
+      </div>
+    </div>
+</section>
+
+<section>
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            {{ publication_card("../static/images/heart.jpg", "Defining the importance of stress reduction in managing cardiovascular disease - the role of exercise", "https://www.sciencedirect.com/science/article/abs/pii/S0033062022000159?via%3Dihub", "Progress in Cardiovascular Diseases") }}
+            {{ publication_card("../static/images/covid.jpg", "Physical activity and exercise as an essential medical strategy for the COVID-19 pandemic and beyond", "https://journals.sagepub.com/doi/10.1177/15353702211028543", "Experimental Biology and Medicine") }}
+            {{ publication_card("../static/images/a-msh.jpg", "The alpha-melanocyte stimulating hormone is related to heart rate during exercise recovery", "https://www.cell.com/heliyon/fulltext/S2405-8440(20)32223-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405844020322234%3Fshowall%3Dtrue", "Cell Press: Heliyon") }}
+            {{ publication_card("../static/images/hormone.png", "Alpha-melanocyte-stimulating hormone during exercise recovery has prognostic value for coronary artery disease", "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HlXUn7wAAAAJ&citation_for_view=HlXUn7wAAAAJ:2osOgNQ5qMEC", "Hormones") }}
+            {{ publication_card("../static/images/stress.jpg", "Physiological behavior during stress anticipation across different chronic stress exposure adaptive models", "https://www.tandfonline.com/doi/full/10.1080/10253890.2021.2006178", "The International Journal on the Biology of Stress") }}
+            {{ publication_card("../static/images/injury.jpg", "Injury incidence in female serbian elite volleyball players", "http://www.sportmont.ucg.ac.me/?sekcija=abstract&artid=1494", "SportMont") }}
           </div>
         </div>
-   </section>
-
-    <section>
-        <div class="album py-5 bg-body-tertiary">
-            <div class="container">
-
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="../static/images/heart.jpg" width="100%" height="100%" preserveAspectRatio="none"></image>
-                    </svg>
-                    <div class="card-body">
-                      <p class="card-text  card-text-truncate">Defining the importance of stress reduction in managing cardiovascular disease - the role of exercise</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn">
-                          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0033062022000159?via%3Dihub" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
-                        </div>
-                        <small class="text-body-secondary">Progress in Cardiovascular Diseases</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="../static/images/covid.jpg" width="100%" height="100%" preserveAspectRatio="none"></image>
-                    </svg>
-                    <div class="card-body">
-                      <p class="card-text  card-text-truncate">Physical activity and exercise as an essential medical strategy for the COVID-19 pandemic and beyond</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn">
-                          <a href="https://journals.sagepub.com/doi/10.1177/15353702211028543" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
-                        </div>
-                        <small class="text-body-secondary">Experimental Biology and Medicine</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="../static/images/a-msh.jpg" width="100%" height="100%" preserveAspectRatio="none"></image>
-                    </svg>
-                    <div class="card-body">
-                      <p class="card-text card-text-truncate">The alpha-melanocyte stimulating hormone is related to heart rate during exercise recovery</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn">
-                          <a href="https://www.cell.com/heliyon/fulltext/S2405-8440(20)32223-4?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405844020322234%3Fshowall%3Dtrue" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
-                        </div>
-                        <small class="text-body-secondary">Cell Press: Heliyon</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="../static/images/hormone.png" width="100%" height="100%" preserveAspectRatio="none"></image>
-                    </svg>
-                    <div class="card-body">
-                      <p class="card-text card-text-truncate">Alpha-melanocyte-stimulating hormone during exercise recovery has prognostic value for coronary artery disease</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn">
-                          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=HlXUn7wAAAAJ&citation_for_view=HlXUn7wAAAAJ:2osOgNQ5qMEC" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
-                        </div>
-                        <small class="text-body-secondary">Hormones</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="../static/images/stress.jpg" width="100%" height="100%" preserveAspectRatio="none"></image>
-                    </svg>
-                    <div class="card-body">
-                      <p class="card-text card-text-truncate">Physiological behavior during stress anticipation across different chronic stress exposure adaptive models</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn">
-                          <a href="https://www.tandfonline.com/doi/full/10.1080/10253890.2021.2006178" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
-                        </div>
-                        <small class="text-body-secondary">The International Journal on the Biology of Stress</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <svg class="card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="#55595c"></rect><image xlink:href="../static/images/injury.jpg" width="100%" height="100%" preserveAspectRatio="none"></image>
-                    </svg>
-                    <div class="card-body">
-                      <p class="card-text card-text-truncate">Injury incidence in female serbian elite volleyball players</p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn">
-                          <a href="http://www.sportmont.ucg.ac.me/?sekcija=abstract&artid=1494" type="button" class="btn btn-sm btn-outline-secondary" target="_blank">Article</a>
-                        </div>
-                        <small class="text-body-secondary">SportMont</small>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-    </section>
+      </div>
+</section>
 
 {% endblock %}
